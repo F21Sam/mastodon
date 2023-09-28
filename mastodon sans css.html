@@ -98,7 +98,7 @@
         /* feature */
         section.feature {
             display: flex;
-           max-width: 80%;
+           width: 80%;
             margin: 6rem auto;
         }
     section.feature img{
@@ -116,12 +116,42 @@
         font-size:  2.5rem ;
     }
         /* perks */
-        .perks {
+        #perks{
+           text-align: center;
+        }
+        #perks h2 {
+            font-size: 2.5rem;
+        }
+        .perks-list {
+           display: flex;
+           width: 80%;
+           margin: 0 auto;
+           
+        }
+        .perks-list section {
+            border: 1px solid lightgrey;
+            padding: 1rem;
+            margin:1rem;
         }
 
         /* footer */
         footer {
+            background-color: #290028;
+            color: white;
+            display: flex;
+            padding: 18px 0;
+            margin-top: 2rem;
+        }
+        footer p{
+            justify-content: center;
+            margin: 0 auto;
 
+        }
+        footer a{
+            color: white;
+        }
+        footer a:visited{
+            color: bisque;
         }
     </style>
 </head>
@@ -217,7 +247,7 @@
     </section>
 
 
-    <section class="perks">
+    <section id="perks">
         <h2>Pourquoi choisir Mastodon ?</h2>
 
         <div class="perks-list">
