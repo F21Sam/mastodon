@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Mastodon - Réseau social décentralisé</title>
+
+    <style>
+        body {
+            /* Par défaut les navigateurs ajoutent une marge sur le corps de la page */
+            margin: 0;
+            /* https://modernfontstacks.com/#humanist */
+            font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+        }
+
+        /* cta */
+        .cta {
+            background-color: #5949d9;
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: background-color 0.8s ease-in-out;
+        }
+
+        .cta:hover {
+            background-color: #382d83;
+
+        }
+
+        /* header */
+        header { 
+            background-color: #290028e7;  
+            position: fixed;
+            top: 0;
+            height: 70px;
+            display: flex;
+            width: 100%;
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+
+        }
+        header a:hover{
+            background-color: rgba(255, 255, 255,0.3);
+            background-size: auto;
+        }
+        header img {
+            width: 150px;
+            
+        }
+        header > div {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            
+        }
+        header ul{
+            display: flex;
+            list-style-type: none;
+        }
+        .new{
+            background-color: darkgoldenrod;
+            border: 1px solid gold;
+            border-radius: 4px;
+            font-size: smaller;
+            margin-left: 0.25rem;
+        }
+        
+        /* hero */
+        #first-section {
+            background-image: url(hero.png);
+            height: 100vh;
+            background-size: cover;
+            padding-top: 70px;
+            color: white;
+            text-align: center;
+            background-position: center;
+        }
+        #first-section > div{
+            width: 40%;
+            margin: auto;
+
+        }
+        #first-section p{
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+
+        }
+        h1{
+            margin-top: 2rem;
+            font-size: 4rem;
+        }
+
+        /* feature */
+        section.feature {
+            display: flex;
+           width: 80%;
+            margin: 6rem auto;
+        }
+    section.feature img{
+        width: 35%;
+    }
+    .feature-text{
+        width: 75%;
+        font-size: 1.5rem;
+
+    }
+    .feature-text p{
+        margin-bottom: 3rem;
+    }
+    .feature-text h2{
+        font-size:  2.5rem ;
+    }
+        /* perks */
+        #perks{
+           text-align: center;
+        }
+        #perks h2 {
+            font-size: 2.5rem;
+        }
+        .perks-list {
+           display: flex;
+           width: 80%;
+           margin: 0 auto;
+           
+        }
+        .perks-list section {
+            border: 1px solid lightgrey;
+            padding: 1rem;
+            margin:1rem;
+        }
+
+        /* footer */
+        footer {
+            background-color: #290028;
+            color: white;
+            display: flex;
+            padding: 18px 0;
+            margin-top: 2rem;
+        }
+        footer p{
+            justify-content: center;
+            margin: 0 auto;
+
+        }
+        footer a{
+            color: white;
+        }
+        footer a:visited{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <a href="https://joinmastodon.org/fr"><img src="logo.svg" alt="Mastodon"></a>
+        <nav>
+            <ul>
+                <li><a href="/fr/servers">Serveurs</a></li>
+                <li><a href="/fr/apps">Applications</a></li>
+                <li>
+                    <a href="https://freshstore.co/collections/mastodon">Merch<span class="new">New</span></a>
+                </li>
+                <li><a href="https://blog.joinmastodon.org/">Blog</a></li>
+                <li><a href="https://docs.joinmastodon.org/">Documentation</a></li>
+                <li><a href="https://github.com/mastodon/mastodon">Code source</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="first-section">
+        <div>
+            <h1>
+                Le réseau social qui n'est pas à vendre.
+            </h1>
+            <p>Votre fil principal devrait être rempli de ce qui vous importe le plus, et non de ce qu'une entreprise pense que vous devriez
+                voir. Un réseau social radicalement différent, remis aux mains de ses utilisateurs.</p>
+
+            <a href="https://joinmastodon.org/fr/servers" class="cta">Choisir un serveur</a>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="feature-text">
+            <h2>Gardez le contrôle de votre fil</h2>
+
+            <p>
+                Vous savez mieux que quiconque ce que vous voulez voir sur votre fil principal. Personne ne veut d'un algorithme ou de
+                publicité
+                qui décide à notre place et qui nous fait perdre notre temps. Suivez n'importe qui, parmi n'importe quel serveur Mastodon,
+                le
+                tout depuis un seul compte. Recevez les publications du monde entier dans l'ordre chronologique et créez-vous votre
+                chez-vous
+                numérique qui vous ressemble.
+            </p>
+
+            <a href="https://docs.joinmastodon.org/user/moderating/" class="cta">En savoir plus</a>
+        </div>
+
+        <img src="features_timeline.webp"
+             alt="Capture d'écran montrant la possibilité de publier en public ou uniquement pour ses followers">
+    </section>
+
+    <section class="feature">
+        <!-- Cette image est décorative, elle n'apporte pas d'informations supplémentaires, c'est pourquoi on a un alt vide -->
+        <img src="features_audience.webp" alt="">
+
+        <div class="feature-text">
+            <h2>Construisez votre audience en toute confiance</h2>
+
+            <p>
+                Vous savez mieux que quiconque ce que vous voulez voir sur votre fil principal. Personne ne veut d'un algorithme ou de
+                publicité
+                qui décide à notre place et qui nous fait perdre notre temps. Suivez n'importe qui, parmi n'importe quel serveur Mastodon,
+                le
+                tout depuis un seul compte. Recevez les publications du monde entier dans l'ordre chronologique et créez-vous votre
+                chez-vous
+                numérique qui vous ressemble.
+            </p>
+
+            <a href="https://docs.joinmastodon.org/user/run-your-own/" class="cta">En savoir plus</a>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="feature-text">
+            <h2>La modération comme elle doit être</h2>
+
+            <p>
+                Mastodon vous redonne le contrôle. Chaque serveur établit ses propres règles, appliquées localement et non pas de manière
+                verticale comme sur les médias sociaux commerciaux, donnant davantage de souplesse pour répondre aux besoins de différentes
+                communautés. Rejoignez un serveur avec des règles qui vous conviennent, ou bien hébergez le vôtre.
+            </p>
+
+            <a href="https://joinmastodon.org/fr/servers" class="cta">Rejoindre un serveur</a>
+        </div>
+
+        <img src="features_moderation.webp" alt="">
+    </section>
+
+
+    <section id="perks">
+        <h2>Pourquoi choisir Mastodon ?</h2>
+
+        <div class="perks-list">
+            <section>
+                <img src="decentralized.svg" alt="">
+                <h3>Décentralisé</h3>
+                <p>
+                    La communication instantanée est trop importante pour être détenue par une entreprise. Chaque serveur Mastodon est
+                    totalement indépendant, mais capable d'interagir avec les autres pour former un réseau social mondial.
+                </p>
+            </section>
+
+            <section>
+                <img src="open-source.svg" alt="">
+                <h3>Open Source</h3>
+                <p>
+                    Mastodon est un logiciel libre et ouvert. Nous croyons en votre droit d’utiliser, de copier, d’étudier et de modifier
+                    Mastodon comme bon vous semble, et nous bénéficions des contributions de la communauté.
+                </p>
+            </section>
+
+            <section>
+                <img src="price-tag.svg" alt="">
+                <h3>Pas à vendre</h3>
+                <p>
+                    Nous respectons votre volonté. Votre flux est créé et conservé par vous. Nous ne publierons jamais de publicités ni
+                    d'invitations à découvrir des profils. Cela signifie que vos données et votre temps sont vôtres. Les vôtres seulement.
+                </p></section>
+
+            <section>
+                <img src="move.svg" alt="">
+                <h3>Interopérable</h3>
+                <p>
+                    Basé sur des protocoles web ouverts, Mastodon peut communiquer avec n’importe quelle autre plateforme qui implémente
+                    ActivityPub. Avec un seul compte, vous avez accès à tout un univers de médias sociaux — le fédiverse.
+                </p>
+            </section>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Réseau social décentralisé libre et open source - <a href="https://mastodon.social/@Mastodon">Nous suivre</a> - Copyright © 2023
+        Mastodon gGmbH.</p>
+</footer>
+</body>
+</html>
