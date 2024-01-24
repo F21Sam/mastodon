@@ -153,6 +153,52 @@
         footer a:visited{
             color: bisque;
         }
+        @media screen and (max-width: 768px) {
+            header > div {
+                flex-direction: column;
+            }
+
+            header ul {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            header a {
+                padding: 0.5rem;
+            }
+
+            .cta {
+                font-size: 0.8rem;
+            }
+
+            #first-section > div {
+                width: 80%;
+            }
+
+            .feature {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            section.feature img {
+                width: 100%;
+            }
+
+            .feature-text {
+                width: 100%;
+            }
+
+            #perks .perks-list {
+                flex-direction: column;
+            }
+
+            .perks-list section {
+                width: 100%;
+                margin: 0 auto 1rem;
+            }
+        }
     </style>
 </head>
 <body>
